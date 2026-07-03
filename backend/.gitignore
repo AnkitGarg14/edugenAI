@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.*
+dist/
+build/
+qdrant/
+qdrant.zip
+uploads/
+*.log
+.vscode/
+.idea/
