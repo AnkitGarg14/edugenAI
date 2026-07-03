@@ -15,7 +15,12 @@ const app = express();
 
 // Security Middleware
 app.use(helmet());
-app.use(cors());
+app.use(
+  cors({
+    origin:"https://edugenai-frontend-3umy.onrender.com",
+    credentials: true,
+  })
+);
 
 // Rate Limiting
 const apiLimiter = rateLimit({
